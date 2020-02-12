@@ -1,0 +1,19 @@
+{
+	"name": "fromdatalake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "filetest"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
