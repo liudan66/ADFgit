@@ -1,0 +1,19 @@
+{
+	"name": "fromtempusefolder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "tempuse"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
