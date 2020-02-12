@@ -1,6 +1,16 @@
 {
 	"name": "AzureTable1",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureTable",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"time": {
+				"type": "string",
+				"defaultValue": "20200212"
+			}
+		},
 		"annotations": [],
 		"type": "AzureTable",
 		"schema": []
