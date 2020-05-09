@@ -9,7 +9,7 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "CustomerID",
+				"name": "ID",
 				"type": "int",
 				"precision": 10
 			},
