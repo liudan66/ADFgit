@@ -1,12 +1,9 @@
 {
-	"name": "withdifferentname2",
+	"name": "withdifferentname1_copy1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
-		},
-		"folder": {
-			"name": "folder1"
 		},
 		"annotations": [],
 		"type": "Parquet",
