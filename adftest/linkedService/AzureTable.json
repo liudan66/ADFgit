@@ -1,5 +1,5 @@
 {
-	"name": "AzureTable1",
+	"name": "AzureTable",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
