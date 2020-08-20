@@ -1,19 +1,19 @@
 {
-	"name": "withdifferentname2",
+	"name": "withdifferentname1_copy1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "folder1"
+			"name": "folder2"
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"container": "tempuse"
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "tempuse"
 			},
 			"compressionCodec": "snappy"
 		},
