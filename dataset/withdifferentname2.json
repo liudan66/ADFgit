@@ -2,7 +2,8 @@
 	"name": "withdifferentname2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+BlobStorage1",
+
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
@@ -12,8 +13,6 @@
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"container": "tempuse"
 			},
 			"compressionCodec": "snappy"
 		},

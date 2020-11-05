@@ -1,11 +1,10 @@
 {
-	"name": "withdifferentname1",
+	"name": "fromtempusefolder",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
-
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
