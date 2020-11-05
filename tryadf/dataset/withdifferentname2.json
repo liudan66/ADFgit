@@ -1,11 +1,13 @@
 {
-	"name": "withdifferentname1",
+	"name": "withdifferentname2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
-
+		"folder": {
+			"name": "folder1"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

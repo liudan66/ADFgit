@@ -1,17 +1,16 @@
 {
-	"name": "withdifferentname1",
+	"name": "fromdatalake_copy1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
-
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "tempuse"
+				"fileSystem": "filetest"
 			},
 			"compressionCodec": "snappy"
 		},

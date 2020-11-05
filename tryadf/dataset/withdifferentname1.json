@@ -5,7 +5,6 @@
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
-
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
