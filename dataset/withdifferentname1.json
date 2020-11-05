@@ -5,6 +5,9 @@
 			"referenceName": "AzureDataLakeStorage2",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "folder2/folder3"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

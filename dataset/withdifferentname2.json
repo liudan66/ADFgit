@@ -2,7 +2,7 @@
 	"name": "withdifferentname2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage2",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
@@ -12,8 +12,8 @@
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "tempuse"
+				"type": "AzureBlobStorageLocation",
+				"container": "tempuse"
 			},
 			"compressionCodec": "snappy"
 		},
