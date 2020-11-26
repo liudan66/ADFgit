@@ -1,0 +1,27 @@
+{
+	"name": "Spark job definition 1",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "smallpool",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "scala",
+		"jobProperties": {
+			"name": "Spark job definition 1",
+			"file": "abfs://<file_system>2@<account_name>3.dfs.core.windows.net/<path>4/<file_name>5",
+			"className": "APSR1",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [
+				"comme"
+			],
+			"jars": [],
+			"files": [],
+			"numExecutors": 2
+		}
+	}
+}
