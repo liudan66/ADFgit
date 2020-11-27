@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "workspacedeploydan"
+		},
+		"dangitbugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"workspacedeploydan-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"workspacedeploydan-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestroage.dfs.core.windows.net"
+		}
+	}
+}
