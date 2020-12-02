@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADFDan"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
 		"AzureDataLakeStorage1_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
@@ -23,13 +27,49 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureTable'"
 		},
+		"dangitbugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'dangitbugbash-WorkspaceDefaultSqlServer'"
+		},
+		"dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'dansynapsebugbash-WorkspaceDefaultSqlServer'"
+		},
+		"workspacedeploydan-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'workspacedeploydan-WorkspaceDefaultSqlServer'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
+			"defaultValue": "https://chayangstoragewestus2.dfs.core.windows.net"
 		},
 		"AzureDataLakeStorage2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://Dandatafactorykeyvault.vault.azure.net/"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "dansqldb"
+		},
+		"dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"workspacedeploydan-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"BranchIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"type": "string",
+			"defaultValue": "anvangtest.database.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,7 +85,7 @@
 	},
 	"resources": [
 		{
-			"name": "ArmTemplate_0",
+			"name": "ADFDan_ArmTemplate_0",
 			"type": "Microsoft.Resources/deployments",
 			"apiVersion": "2018-02-01",
 			"properties": {
@@ -57,6 +97,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
@@ -75,10 +118,57 @@
 					},
 					"AzureDataLakeStorage2_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"BranchIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+						"value": "[parameters('BranchIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ADFDan_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"dangitbugbash-WorkspaceDefaultSqlServer_connectionString": {
+						"value": "[parameters('dangitbugbash-WorkspaceDefaultSqlServer_connectionString')]"
+					},
+					"dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString": {
+						"value": "[parameters('dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString')]"
+					},
+					"workspacedeploydan-WorkspaceDefaultSqlServer_connectionString": {
+						"value": "[parameters('workspacedeploydan-WorkspaceDefaultSqlServer_connectionString')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_connectionString_secretName')]"
+					},
+					"dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+						"value": "[parameters('dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					},
+					"dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+						"value": "[parameters('dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					},
+					"workspacedeploydan-WorkspaceDefaultStorage_properties_typeProperties_url": {
+						"value": "[parameters('workspacedeploydan-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ADFDan_ArmTemplate_0')]"
+			]
 		}
 	]
 }
