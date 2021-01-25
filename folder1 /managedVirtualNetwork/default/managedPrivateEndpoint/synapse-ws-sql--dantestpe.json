@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sql--dantestpe",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpe",
+		"groupId": "sql",
+		"fqdns": [
+			"dantestpe.2da9304e-0b31-4968-b5dd-dce36c051aae.sql.azuresynapse.net"
+		]
+	}
+}
