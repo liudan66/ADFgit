@@ -176,7 +176,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), parameters('AzureDataLakeStorage1'))]",
+			"name": "[ parameters('AzureDataLakeStorage1')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
