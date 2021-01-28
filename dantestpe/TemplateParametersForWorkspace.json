@@ -8,8 +8,14 @@
 		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://accessibilitytest.dfs.core.windows.net"
 		}
 	}
 }
