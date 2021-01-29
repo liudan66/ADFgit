@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "CREATE PROC [dbo].[Procedure]\n@param1 int,\n@param2 int\nAS\nBEGIN\nSELECT @param1, @param2\nEND\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "pool1",
+				"databaseName": "pool1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
