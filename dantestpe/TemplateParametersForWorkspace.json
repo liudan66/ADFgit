@@ -11,11 +11,8 @@
 		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://accessibilitytest.dfs.core.windows.net"
-		},
-		"dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+		"Notebook 1_properties_bigDataPool_referenceName": {
+			"value": "Sparkpool1"
 		}
 	}
 }

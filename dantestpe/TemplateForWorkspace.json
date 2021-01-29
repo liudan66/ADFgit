@@ -15,13 +15,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'dantestpe-WorkspaceDefaultSqlServer'"
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"Notebook 1_properties_bigDataPool_referenceName": {
 			"type": "string",
-			"defaultValue": "https://accessibilitytest.dfs.core.windows.net"
-		},
-		"dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
+			"defaultValue": "Sparkpool1"
 		}
 	},
 	"variables": {
@@ -54,7 +50,7 @@
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
+					"url": "https://accessibilitytest.dfs.core.windows.net",
 					"accountKey": {
 						"type": "SecureString",
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
@@ -96,7 +92,10 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('dantestpe-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('dantestpe-WorkspaceDefaultSqlServer_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -115,7 +114,7 @@
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					"url": "https://dansynapsestoragev2.dfs.core.windows.net"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -226,7 +225,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "Sparkpool1",
+					"referenceName": "[parameters('Notebook 1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
