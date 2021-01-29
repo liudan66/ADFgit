@@ -1,8 +1,10 @@
 {
     "Microsoft.Synapse/workspaces/notebooks": {
 	 "properties": {
-            "bigDataPool": {
-                "referenceName": "="
+		 "content": {
+            		"bigDataPool": {
+               			 "referenceName": "="
+			}
             }
         },
     "Microsoft.Synapse/workspaces/sqlscripts": {
