@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 1_Copy1",
+	"properties": {
+		"content": {
+			"query": "we",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "pool1",
+				"databaseName": "pool1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
