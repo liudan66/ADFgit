@@ -6,9 +6,16 @@
         },
     "Microsoft.Synapse/workspaces/sqlscripts": {
 	 "currentConnection": {
-	     "name": "",
+	     "name": "=",
 	      "type": ""
 	    }
-    	}
+    	},
+	
+     "Microsoft.Synapse/workspaces/linkedServices": {
+	     "name" :{
+	      "name": "=",
+	     }
+     }
+	
     
 }
