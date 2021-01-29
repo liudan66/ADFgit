@@ -1,13 +1,12 @@
 {
     "Microsoft.Synapse/workspaces/notebooks": {
-        "properties": {
-            "typeProperties": {
-                "*": "="
-                
-            },
         "bigDataPool":{
             "referenceName": "="
-            }
+            },
+        "currentConnection": {
+			"name": "",
+			"type": ""
+			}
         }
     }
 }
