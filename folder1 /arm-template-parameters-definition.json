@@ -1,7 +1,8 @@
 {
     "Microsoft.Synapse/workspaces/notebooks": {
-        "bigDataPool":{
-            "referenceName": "="
+	 "properties": {
+            "bigDataPool": {
+                "referenceName": "="
             }
         },
     "Microsoft.Synapse/workspaces/sqlscripts": {
@@ -10,12 +11,6 @@
 	      "type": ""
 	    }
     	},
-	
-     "Microsoft.Synapse/workspaces/linkedServices": {
-	     "name" :{
-	      "name": "=",
-	     }
-     }
 	
     
 }
