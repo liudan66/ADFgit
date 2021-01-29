@@ -5,20 +5,17 @@
 		"workspaceName": {
 			"value": "dantestpe"
 		},
-		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
-		"dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://hozhaogen2.dfs.core.windows.net"
+			"value": "https://accessibilitytest.dfs.core.windows.net"
 		},
-		"AzureDataLakeStorage1":{
-			"value": "AzureDataLakeStorageforsales"
+		"dantestpe-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
 		}
 	}
 }
