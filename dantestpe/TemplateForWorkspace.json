@@ -14,10 +14,6 @@
 		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'dantestpe-WorkspaceDefaultSqlServer'"
-		},
-		"Notebook 1_properties_bigDataPool_referenceName": {
-			"type": "string",
-			"defaultValue": "Sparkpool1"
 		}
 	},
 	"variables": {
@@ -225,7 +221,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "[parameters('Notebook 1_properties_bigDataPool_referenceName')]",
+					"referenceName": "Sparkpool1",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -257,8 +253,11 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
-					}
+						"memory": 56,
+						"extraHeader": {},
+						"automaticScaleJobs": false
+					},
+					"sessionKeepAliveTimeout": 30
 				},
 				"cells": []
 			},

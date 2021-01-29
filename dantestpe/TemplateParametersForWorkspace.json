@@ -10,9 +10,6 @@
 		},
 		"dantestpe-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
-		},
-		"Notebook 1_properties_bigDataPool_referenceName": {
-			"value": "Sparkpool1"
 		}
 	}
 }
