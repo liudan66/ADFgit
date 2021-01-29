@@ -53,7 +53,7 @@
             "typeProperties": {
                 "*": "="
             }
-        }
+        },
     "Microsoft.Synapse/workspaces/notebooks": {
         "properties": {
             "typeProperties": {
