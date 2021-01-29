@@ -2,11 +2,13 @@
     "Microsoft.Synapse/workspaces/notebooks": {
         "bigDataPool":{
             "referenceName": "="
-            },
-        "currentConnection": {
-			"name": "",
-			"type": ""
-			}
-        }
-    }
+            }
+        },
+    "Microsoft.Synapse/workspaces/sqlscripts": {
+	 "currentConnection": {
+	     "name": "",
+	      "type": ""
+	    }
+    	}
+    
 }
