@@ -1,0 +1,16 @@
+{
+	"name": "AddAdmin",
+	"properties": {
+		"content": {
+			"query": " --v-sumtri\n\nCREATE USER [v-sumtri@microsoft.com] FROM EXTERNAL PROVIDER; \nEXEC sp_addrolemember 'db_owner', 'v-sumtri@microsoft.com'",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"name": "sqlpool",
+				"type": "SqlPool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

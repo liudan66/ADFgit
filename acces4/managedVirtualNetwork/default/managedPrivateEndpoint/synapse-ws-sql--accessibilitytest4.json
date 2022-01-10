@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sql--accessibilitytest4",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/58f8824d-32b0-4825-9825-02fa6a801546/resourceGroups/Test_Accessibility/providers/Microsoft.Synapse/workspaces/accessibilitytest4",
+		"groupId": "sql",
+		"fqdns": [
+			"accessibilitytest4.sql.azuresynapse.net"
+		]
+	}
+}
