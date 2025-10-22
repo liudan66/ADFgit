@@ -197,8 +197,13 @@ npm run build
 1. **Password Hashing**: All passwords are hashed using bcryptjs before storing in database
 2. **JWT Authentication**: Secure token-based authentication
 3. **Input Validation**: Server-side validation using express-validator
-4. **CORS Configuration**: Controlled cross-origin requests
-5. **Error Handling**: Comprehensive error handling middleware
+4. **NoSQL Injection Prevention**: express-mongo-sanitize prevents MongoDB operator injection
+5. **Rate Limiting**: Protection against brute force and DDoS attacks
+   - General API: 100 requests per 15 minutes per IP
+   - Auth endpoints: 5 requests per 15 minutes per IP
+6. **Security Headers**: Helmet.js sets secure HTTP headers
+7. **CORS Configuration**: Controlled cross-origin requests
+8. **Error Handling**: Comprehensive error handling middleware that doesn't expose sensitive information
 6. **Protected Routes**: Authentication required for sensitive operations
 
 ## Default User Roles
